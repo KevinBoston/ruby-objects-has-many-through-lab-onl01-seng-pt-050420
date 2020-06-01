@@ -4,9 +4,7 @@ class Doctor
   def initialize(name)
     @name = name 
     @@all << self 
-    
   end
-  
   def self.all 
     @@all 
   end
@@ -19,10 +17,4 @@ class Doctor
   def patients
     appointments.map(&:patient)
   end
-    
-
-
-
-
-
 end
